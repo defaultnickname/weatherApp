@@ -1,38 +1,200 @@
-.App {
+body,
+html {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+#root {
+  background-image: linear-gradient(to bottom, #5252aa, rgb(235, 226, 236));
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.footer {
+  background: white;
+  min-height: 100px;
+}
+
+.footer {
+  background: white;
+  min-height: 100px;
+  margin-right: auto;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weatherTab {
+  font-family: "Lato", sans-serif;
   display: flex;
-  flex-direction: column;
+  max-width: 60%;
+  min-height: 130px;
+  text-align: center;
+  padding: 25px 0px 10px 0px;
+  margin: 20px auto 5px auto;
+  border-radius: 30px 50px 15px;
+  background-color: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+.weatherTab ul {
+  margin-left: 0px;
+  padding-left: 0px;
+  flex-basis: 25%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.div-flex {
+  display: flex;
+}
+
+.div-flex img {
+  max-width: 8%;
+  margin-left: auto;
+}
+
+.div-flex div {
+  margin-right: auto;
+}
+
+.weatherTab .parent-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  flex-basis: 0;
+  text-align: center;
+  justify-content: center;
+  color: rgb(39, 38, 38);
+}
+
+img {
+  height: auto;
+  width: 40%;
+}
+
+.weatherTab .city-hour {
+  font-size: 40px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+  text-align: left;
+}
+
+.weatherTab .temp {
+  font-size: 130px;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+
+.weatherTab .wind {
+  font-size: 25px;
+
+  width: 100%;
+}
+.weatherTab .wind img {
+  max-width: 10%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+  flex-basis: 100%;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+  flex-basis: 100%;
+}
+.align--right {
+  justify-content: right;
+}
+
+.justify-center {
+  justify-content: center;
+
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  font-family: "Lato", sans-serif;
+}
+
+.todays-thumb {
+  width: 100%;
+  height: auto;
+  align-self: flex-end;
+  font-size: 50px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.todays-thumb img {
+  max-width: 30%;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.navbar div {
+  flex: 1 0 30%;
+  display: flex;
+  align-items: center;
+}
+.navbar form {
+  width: 100%;
+  height: 60%;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  border: none;
+}
+
+.navbar img {
+  max-width: 15%;
+  padding: 10px 10px 10px 10px;
+}
+.navbar a {
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:link {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar button {
+  margin-right: 40px;
+  align-self: center;
+  text-align-last: center;
+  background-color: transparent;
+  border: None;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
 }
